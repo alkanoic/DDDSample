@@ -1,0 +1,8 @@
+﻿CREATE FUNCTION [dbo].[ufnFirstDay]
+(
+	@param DATE
+)
+RETURNS DATE
+AS BEGIN
+	RETURN DATEADD(MM, DATEDIFF(MM, 0, @param), 0)
+END

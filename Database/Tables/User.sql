@@ -1,0 +1,10 @@
+﻿CREATE TABLE [dbo].[User]
+(
+	[UserId] UNIQUEIDENTIFIER NOT NULL,
+	[UserName] NVARCHAR(30) NOT NULL,
+	[UserStatus] INT NOT NULL, 
+    [CreateOn] DATETIME NULL, 
+    [UpdateOn] DATETIME NULL, 
+    [UpdateUserId] UNIQUEIDENTIFIER NULL, 
+    CONSTRAINT [PK_User] PRIMARY KEY ([UserId])
+)
